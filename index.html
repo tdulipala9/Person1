@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<title>FreeFolio - Freelancer Portfolio Template</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Free HTML Templates" name="keywords">
+<meta content="Free HTML Templates" name="description">
+
+<!-- Favicon -->
+<link href="img/favicon.ico" rel="icon">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+<style>
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Rockwell", serif;}
+body, html {
+  height: 100%;
+  color: rgb(0, 0, 0);
+  line-height: 3;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("blackwallpaper.png");
+  min-height: 400px;
+}
+
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("ColorBlock.png");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("blackwallpaper.png");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+h3
+  {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-text-gray w3-hide-small"><i class="fa fa-home"></i> Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-gray w3-hide-small"><i class="fa fa-user"></i> About Me</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-gray w3-hide-small"><i class="fa fa-th"></i> My Work</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-text-gray w3-hide-small"><i class="fa fa-laptop-code"></i> Skills</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-gray w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Me</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">My Work</a>
+    <a href="#skills" class="w3-bar-item w3-button" onclick="toggleFunction()">Skills</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contacts</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<div class="container-fluid bg-dark d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+              <img class="img-fluid w-100 rounded-circle shadow-sm" src="IMG_5663.jpg">
+          </div>
+          <div class="col-lg-7 text-center text-lg-left">
+              <h3 class="display-5 text-uppercase text-light mb-2" style="-webkit-text-stroke: 2px #dfe8e8;">I'm</h3>
+              <h1 class="display-3 text-uppercase text-light mb-2" style="-webkit-text-stroke: 2px #dfe8e8;">Tanay Dulipala</h1>
+              <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+              <p class="line-1 anim-typewriter text-white">Software Engineer/UI Developer</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Tanay<span class="w3-hide-small"> Dulipala </span>
+   
+  </div>
+
+  <div class="w3-display-left" style="white-space:nowrap;">
+    <img src="ColorBlock.png" alt="Photo of Me" width="2000" height="5">
+   
+  </div>
+  
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase" style="-webkit-text-stroke: 1px #93979c;">About</h1>
+                <h1 class="position-absolute text-uppercase text-white">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="profilepic.jpeg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="text-white mb-4">Software Engineer/UI Developer</h3>
+                    <p class = "text-white"> I am a sophomore majoring in Computation Media at the Georgia Institute of  Technology. I am fascinated by Computer Science, as it is a vast field that allows me to put my problem-solving and analysis skills to use. I am also a hardworking and passionate job seeker with strong organizational skills, eager to secure an entry-level position, and ready to help achieve company goals.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2 text-white"><h6>Name: <span class="text-secondary text-white">Tanay Dulipala</span></h6></div>
+                        <div class="col-sm-6 py-2 text-white"><h6>Birthday: <span class="text-secondary">25 July 2003</span></h6></div>
+                        <div class="col-sm-6 py-2 text-white"><h6>Degree: <span class="text-secondary">Bachelors</span></h6></div>
+                        <div class="col-sm-6 py-2 text-white"><h6>Experience: <span class="text-secondary">2 Years</span></h6></div>
+                        <div class="col-sm-6 py-2 text-white"><h6>Phone: <span class="text-secondary">+1678-773-3164</span></h6></div>
+                        <div class="col-sm-6 py-2 text-white"><h6>Email: <span class="text-secondary">tanaydulipala@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2 text-white"><h6>Address: <span class="text-secondary">301 10th St NW, Atlanta, GA 30318</span></h6></div>
+                        <div class="col-sm-6 py-2 text-white"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+                    </div>
+                    <a href="" class="btn btn-outline-light mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-light">Learn More</a>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Container (Skills Section) -->
+<div class="w3-content w3-container w3-padding-64" id="skills">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase" style="-webkit-text-stroke: 1px #93979c;">Skills</h1>
+            <h1 class="position-absolute text-uppercase text-white">My Skills</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold text-white">HTML</h6>
+                        <h6 class="font-weight-bold text-white">95%</h6>
+                    </div>
+                    <div class="w3-light-grey w3-round-xlarge">
+                      <div class="w3-container w3-blue w3-round-xlarge" style="width:95%"></div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold text-white">CSS</h6>
+                        <h6 class="font-weight-bold text-white">85%</h6>
+                    </div>
+                    <div class="w3-light-grey w3-round-xlarge">
+                      <div class="w3-container w3-red w3-round" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold text-white">Python/Java/C++</h6>
+                        <h6 class="font-weight-bold text-white">90%</h6>
+                    </div>
+                    <div class="w3-light-grey w3-round-xlarge">
+                      <div class="w3-container w3-green w3-round" style="width:90%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold text-white">Javascript</h6>
+                        <h6 class="font-weight-bold text-white">90%</h6>
+                    </div>
+                    <div class="w3-light-grey w3-round-xlarge">
+                      <div class="w3-container w3-purple w3-round" style="width:90%"></div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold text-white">Leadership</h6>
+                        <h6 class="font-weight-bold text-white">95%</h6>
+                    </div>
+                    <div class="w3-light-grey w3-round-xlarge">
+                      <div class="w3-container w3-orange w3-round" style="width:95%"></div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold text-white">Communication</h6>
+                        <h6 class="font-weight-bold text-white">85%</h6>
+                    </div>
+                    <div class="w3-light-grey w3-round-xlarge">
+                      <div class="w3-container w3-yellow w3-round" style="width:95%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="container-fluid py-5" id="testimonial">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-8">
+              <div class="owl-carousel testimonial-carousel">
+                  <div class="text-center">
+                      <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                      <h4 class="font-weight-light mb-4 text-white">"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do." — Pele, Brazilian soccer player</h4>
+                      <h4 class="font-weight-light mb-4 w3-text-red">                                                                                                                                                       ----------- Quote that represents me ----------                                       </h4>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+      <h1 class="display-1 text-uppercase" style="-webkit-text-stroke: 1px #93979c;">Work</h1>
+      <h1 class="position-absolute text-uppercase text-white">Work</h1>
+  </div>
+    <div class="w3-col m3">
+      <img src="Volunteering.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Volunteering Experience">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="WorkExperience.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Work Experence">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Accolades.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Accolades">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="SkillsClass.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Relavant Courses and Skills">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">Load More</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+    <div class="w3-display-left" style="white-space:nowrap;">
+    <img src="ColorBlock.png" alt="Photo of Me" width="2000" height="5">
+   
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center w3-text-white">I'd Love Your Feedback!</h3>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="profilepic2.jpeg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom w3-text-white">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-white w3-xlarge w3-margin-right w3-text-red"></i> Atlanta, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-white w3-xlarge w3-margin-right w3-text-gray"></i> Phone: 678-779-3164<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-white w3-xlarge w3-margin-right text-primary"></i> Email: tdulipala3@gatech.edu<br>
+      </div>
+      <p class = "w3-text-white">Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section w3-text-white" type="submit">
+          <i class="fa fa-paper-plane text-white"></i> Send
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
